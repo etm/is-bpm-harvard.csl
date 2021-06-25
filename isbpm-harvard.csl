@@ -205,7 +205,7 @@
       </else-if>
     </choose>
   </macro>
- <macro name="first-position-author">
+  <macro name="first-position-author">
     <group delimiter=", ">
       <names variable="author">
         <name form="short" and="text" delimiter=", " initialize-with=". " et-al-min="3" et-al-use-first="1" sort-separator=", "/>
@@ -223,11 +223,11 @@
         </substitute>
       </names>
       <text macro="issued"/>
-       <group delimiter=" ">
-         <label variable="locator" form="short"/>
-         <text variable="locator"/>
-       </group>
-     </group>
+      <group delimiter=" ">
+        <label variable="locator" form="short"/>
+        <text variable="locator"/>
+      </group>
+    </group>
   </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-givenname="true" disambiguate-add-year-suffix="true" collapse="year" cite-group-delimiter=", ">
     <sort>
@@ -251,7 +251,7 @@
       <key macro="issued" sort="descending"/>
     </sort>
     <layout>
-       <text macro="first-position-author" prefix="(" suffix=") "/>
+      <text macro="first-position-author" prefix="(" suffix=") "/>
       <group suffix=".">
         <text macro="author" suffix=","/>
         <text macro="issued" prefix=" "/>
